@@ -1,35 +1,20 @@
+# Bank Game Smart Contract UI
+
+This is the user interface (UI) for the Bank Game smart contract. The UI is built using Next.js, Chakra UI, and ThirdWeb technologies. The website for the UI can be accessed at [https://bankagame.vercel.app/](https://bankagame.vercel.app/).
+
+## Technologies Used
+
+- ThirdWeb: ThirdWeb is a decentralized web platform that provides tools and services for building and deploying decentralized applications (dApps). It allows developers to interact with smart contracts on the blockchain.
+- Next.js: Next.js is a popular React framework that enables server-side rendering, static site generation, and other advanced features for building web applications.
+- Chakra UI: Chakra UI is a simple and modular UI component library for React applications. It provides a set of customizable components that can be used to build a consistent and visually appealing user interface.
+
 ## Getting Started
 
-Create a project using this example:
+To run the Bank Game smart contract UI locally, follow these steps:
 
-```bash
-npx thirdweb create --template next-javascript-starter
-```
+1. Clone the repository: `git clone [repository_url]`
+2. Navigate to the project directory: `cd bank-game-ui`
+3. Install dependencies: `npm install`
+4. Start the development server: `npm run dev`
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
-
-On `pages/_app.js`, you'll find our `ThirdwebProvider` wrapping your app, this is necessary for our [hooks](https://portal.thirdweb.com/react) and
-[UI Components](https://portal.thirdweb.com/ui-components) to work.
-
-### Deploy to IPFS
-
-Deploy a copy of your application to IPFS using the following command:
-
-```bash
-yarn deploy
-```
-
-## Learn More
-
-To learn more about thirdweb and Next.js, take a look at the following resources:
-
-- [thirdweb React Documentation](https://docs.thirdweb.com/react) - learn about our React SDK.
-- [thirdweb JavaScript Documentation](https://docs.thirdweb.com/react) - learn about our JavaScript/TypeScript SDK.
-- [thirdweb Portal](https://docs.thirdweb.com/react) - check our guides and development resources.
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-
-You can check out [the thirdweb GitHub organization](https://github.com/thirdweb-dev) - your feedback and contributions are welcome!
-
-## Join our Discord!
-
-For any questions, suggestions, join our discord at [https://discord.gg/thirdweb](https://discord.gg/thirdweb).
+The development server will start and the UI can be accessed in your browser at `http://localhost:3000`.
