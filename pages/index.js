@@ -96,6 +96,7 @@ export default function Home() {
                                         contract.call("startGame", [gameID], {value: ethers.utils.parseEther(gameETH)})
                                     }}
                                     onSuccess={() => clearValues()}
+                                    onError={(error) => alert(error)}
                                 >{"Start the game with an initial bet"}</Web3Button>
                             ) : (
                                 <Text>Connect you wallet to interract</Text>
@@ -122,6 +123,7 @@ export default function Home() {
                                         contract.call("Bet", [betgameID], {value: ethers.utils.parseEther(betETH)})
                                     }}
                                     onSuccess={() => clearValues()}
+                                    onError={(error) => alert(error)}
                                 >{"BET"}</Web3Button>
                             ) : (
                                 <Text>Connect you wallet to interract</Text>
@@ -184,6 +186,7 @@ export default function Home() {
                                 action={(contract) => {
                                     contract.call("winthrdraw", [value])
                                 }}
+                                onError={(error) => alert(error)}
                             >{"Withdraw prizes from the game " + value}</Web3Button>
                         ) : (
                             <Text>Connect you wallet to interract</Text>
